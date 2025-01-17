@@ -1,6 +1,9 @@
 ## For Yext
 
-To run, just add .npmrc from alpha
+To run
+1. Add .npmrc from alpha to this project root
+2.  Run `npm install`
+3. Run `npm run dev`
 
 # React + TypeScript + Vite
 
