@@ -17,9 +17,13 @@ type DataType = {
   status: string;
 }
 
-export default function App() {
+const initialPaginationState: PaginationInfo = {
+  pageIndex: 0,
+  pageSize: 10,
+}
 
-  const [paginationInfo, setPaginationInfo] = useState<PaginationInfo>({ pageIndex: 0, pageSize: 10 });
+export default function App() {
+  const [paginationInfo, setPaginationInfo] = useState<PaginationInfo>(initialPaginationState);
 
   const columns = useMemo(() => {
     return [
@@ -74,12 +78,6 @@ export default function App() {
             isHoverable
             manualPagination
             rowCount={outsideData.length}
-            initialState={{
-              pagination: {
-                pageIndex: 0,
-                pageSize: 10,
-              }
-            }}
             state={{
               pagination: paginationInfo,
             }}

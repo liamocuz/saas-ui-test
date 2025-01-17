@@ -1,3 +1,7 @@
+## For Yext
+
+To run, just add .npmrc from alpha
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
