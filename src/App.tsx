@@ -66,7 +66,7 @@ export default function App() {
   console.log("RENDERING APP");
 
   return (
-    <Page height={"full"}>
+    <Page height={"100dvh"}>
       <PageHeader />
       <PageBody contentWidth={"full"}>
         <Center>
