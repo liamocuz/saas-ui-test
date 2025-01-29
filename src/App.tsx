@@ -68,8 +68,8 @@ export default function App() {
   return (
     <Page height={"100dvh"}>
       <PageHeader />
-      <PageBody contentWidth={"full"}>
-        <Center>
+      <PageBody contentWidth={"full"} p="0" position="relative" minHeight={"0"}>
+        <Center height={"100%"}>
           <DataGrid
             columns={columns}
             data={getSlice(outsideData, paginationInfo.pageIndex, paginationInfo.pageSize)}
